@@ -9,9 +9,9 @@ const PizzaList = () => {
         <div className={styles.container}>
           <h1 className={styles.title}>THE BEST PIZZA IN TOWN</h1>
           <p className={styles.desc}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu
-            in pretium molestie. Interdum et malesuada fames acme. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit.
+          We have been serving our customers since 2011. Our clientele has grown since then and we have gone from strength to strength with the support of our loyal customers! <br />
+            We are always open to new ideas and new ways to serve our customers. <br />
+            select your pizza from the menu, and get your order delivered for free within 30 minutes! 
           </p>
           <div className={styles.wrapper}>
               <PizzaCard/>
