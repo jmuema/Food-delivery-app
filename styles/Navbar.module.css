@@ -1,0 +1,24 @@
+.container{
+    height: 100px;
+    padding: 0px 50px;
+    background-color: #d1411e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .item:nth-child(2) {
+    flex: 3;
+  }
+  
+  .item:last-child {
+    justify-content: flex-end;
+  }
