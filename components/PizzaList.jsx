@@ -4,8 +4,8 @@ import PizzaCard from "./PizzaCard"
 
 
 
-const PizzaList = () => {
-    return (
+const PizzaList = ({ pizzaList }) => {
+  return (
         <div className={styles.container}>
           <h1 className={styles.title}>THE BEST PIZZA IN TOWN</h1>
           <p className={styles.desc}>
@@ -14,15 +14,10 @@ const PizzaList = () => {
             select your pizza from the menu, and get your order delivered for free within 30 minutes! 
           </p>
           <div className={styles.wrapper}>
-              <PizzaCard/>
-              <PizzaCard/>
-              <PizzaCard/>
-              <PizzaCard/>
-              <PizzaCard/>
-              <PizzaCard/>
-              <PizzaCard/>
-              <PizzaCard/>
-          </div>
+        {pizzaList.map((pizza) => (
+          <PizzaCard key={pizza._id} pizza={pizza} />
+        ))}
+      </div>
         </div>
       );
     };
